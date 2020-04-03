@@ -66,5 +66,4 @@ ptr_t stencil_7(ptr_t arr, ptr_t aux, const dist_grid_info_t *info, int nt);
 ptr_t stencil_27(ptr_t arr, ptr_t aux, const dist_grid_info_t *info, int nt);
 
 /*next is add funcation*/
-ptr_t memory_alloc(const dist_grid_info_t *info);
 #endif

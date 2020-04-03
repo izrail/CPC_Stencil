@@ -25,7 +25,7 @@ void create_dist_grid(dist_grid_info_t *grid_info, int stencil_type) {
 }
 
 void destroy_dist_grid(dist_grid_info_t *grid_info) {
-
+	free(grid_info);
 }
 
 ptr_t stencil_7(ptr_t grid, ptr_t aux, const dist_grid_info_t *grid_info, int nt) {

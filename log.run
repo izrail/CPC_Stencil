@@ -1,0 +1,9 @@
+Job <47401314> has been submitted to queue <q_sw_expr>
+waiting for dispatch ...
+Significant numeric error.
+7-point stencil - Optimized version:
+Size (512 x 512 x 512), Timestep 16
+Preprocessing time 0.000192s
+Computation time 0.821641s, Performance 33.977478Gflop/s
+dispatching ...
+Job 47401314 has been finished.

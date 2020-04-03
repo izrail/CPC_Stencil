@@ -1,11 +1,11 @@
-Job <47399788> has been submitted to queue <q_sw_expr>
+Job <45820561> has been submitted to queue <q_sw_cpc_1>
 waiting for dispatch ...
-1-norm = 0.0000000000000009
-    2-norm = 0.0000000000000012
-  inf-norm = 0.0000000000000160
-7-point stencil - A naive base-line:
-Size (512 x 512 x 512), Timestep 48
-Preprocessing time 0.000020s
-Computation time 172.936934s, Performance 0.484291Gflop/s
+1-norm = 0.0000000000000022
+    2-norm = 0.0000000000000030
+  inf-norm = 0.0000000000000355
+7-point stencil - Optimized version:
+Size (768 x 768 x 768), Timestep 64
+Preprocessing time 0.000189s
+Computation time 4.135908s, Performance 91.124690Gflop/s
 dispatching ...
-Job 47399788 has been finished.
+Job 45820561 has been finished.
