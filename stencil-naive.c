@@ -4,6 +4,8 @@ const char* version_name = "A naive base-line";
 
 void create_dist_grid(dist_grid_info_t *grid_info, int stencil_type) {
     /* Naive implementation uses Process 0 to do all computations */
+	
+
     if(grid_info->p_id == 0) {
         grid_info->local_size_x = grid_info->global_size_x;
         grid_info->local_size_y = grid_info->global_size_y;
@@ -13,6 +15,7 @@ void create_dist_grid(dist_grid_info_t *grid_info, int stencil_type) {
         grid_info->local_size_y = 0;
         grid_info->local_size_z = 0;
     }
+
     grid_info->offset_x = 0;
     grid_info->offset_y = 0;
     grid_info->offset_z = 0;
