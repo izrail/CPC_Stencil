@@ -1,0 +1,133 @@
+
+-----------------------------------------------------------
+ Compiling stencil-optimized.c (/tmp/ccI#.jEwUTD)
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+ Options:
+-----------------------------------------------------------
+  Target:SW2, ISA:ISA_1, Endian:little, Pointer Size:64
+  -O3	(Optimization level)
+  -g0	(Debug level)
+  -m2	(Report advisories)
+-----------------------------------------------------------
+
+ Group options are marked with '#' if changed,
+ or with '=' if explicitly set to default value.
+
+-----------------------------------------------------------
+ -LANG Option Group
+	Options to control source language interpretation
+-----------------------------------------------------------
+# copyinout           = ON
+                        (FORTRAN: In a loop, pass noncontiguous array by copy-in-out to improve locality)
+-----------------------------------------------------------
+
+
+-----------------------------------------------------------
+ -LIST Option Group
+	Options to control the listing file
+-----------------------------------------------------------
+#                     = ON
+                        (Enable listing file (.l) generation)
+# options             = ON
+                        (List set/modified options in listing file)
+# notes               = OFF
+                        (Put compiler notes in .s file)
+-----------------------------------------------------------
+
+
+-----------------------------------------------------------
+ -OPT Option Group
+	Options to control general optimization
+-----------------------------------------------------------
+# div_split           = ON
+                        (Allow splitting of a/b into a*recip(b))
+# fast_exp            = ON
+                        (Use multiplication and square root for exp() where faster)
+# fast_trunc          = ON
+                        (Inline NINT and related intrinsics with limited-domain algorithm)
+# fold_aggressive     = ON
+                        (Allow aggressive expression folding optimizations)
+# fold_intrinsics     = ON
+                        (Allow expression folding of Fortran intrinsic calls)
+# fold_reassociate    = ON
+                        (Allow optimizations which reassociate floating point operators)
+# fold_unsafe_relops  = ON
+                        (Allow relational operator folding which may cause integer overflow)
+# got_call_conversion = ON
+                        (Allow function address loads to be moved out of loops)
+# IEEE_arithmetic     = 1
+                        (Level of conformance to IEEE-754 arithmetic rules)
+# ldx                 = ON
+                        (Allow generation of indexed load/store operations)
+# Ofast               = 
+                        (Tailor options for performance on current target)
+# Olimit              = 2147483647
+                        (Limit size of subprograms which will be optimized)
+# reorg_common        = ON
+                        (Allow splitting of COMMON blocks to improve cache behavior)
+# roundoff            = 2
+                        (Level of acceptable departure from source roundoff semantics)
+# fold_arith_limit    = 
+                        (Limit size of subexpressions to be folded)
+-----------------------------------------------------------
+
+
+-----------------------------------------------------------
+ -LNO Option Group
+	Options to control loop nest optimization
+-----------------------------------------------------------
+# fusion              = 2
+= opt                 = 1
+# outer_unroll_max    = 5
+# ou_max              = 5
+# outer_unroll_prod_max= 16
+# ou_prod_max         = 16
+-----------------------------------------------------------
+
+
+-----------------------------------------------------------
+ -TARG Option Group
+	Options to specify the target machine characteristics
+-----------------------------------------------------------
+# abi                 = i64
+                        (Specify the ABI to follow)
+# processor           = sw2
+                        (Specify the target microprocessor)
+-----------------------------------------------------------
+
+
+-----------------------------------------------------------
+ -WOPT Option Group
+	Options to control internal WHIRL optimization
+-----------------------------------------------------------
+# estr_fb_injury      = ON
+# warn_uninit         = ON
+-----------------------------------------------------------
+
+       = 50
+# tlb_entries1        = 32
+# tlb1                = 32
+# tlb_trustworthiness = 75
+-----------------------------------------------------------
+
+
+-----------------------------------------------------------
+ -TENV Option Group
+	Options to set or assert target environment characteristics
+-----------------------------------------------------------
+# Gspace              = 4194075
+                        (Maximum GP-relative space available)
+-----------------------------------------------------------
+
+
+-----------------------------------------------------------
+ -WOPT Option Group
+	Options to control internal WHIRL optimization
+-----------------------------------------------------------
+# estr_fb_injury      = ON
+# ldx                 = ON
+# rvi1                = OFF
+-----------------------------------------------------------
+

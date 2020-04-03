@@ -1,6 +1,5 @@
 #ifndef COMMON_H_INCLUDED
 #define COMMON_H_INCLUDED 1
-
 /* Z for zero, P for positive 1, N for negative 1 */
 #define ALPHA_ZZZ (0.9415)
 #define ALPHA_NZZ (0.01531)
@@ -55,7 +54,13 @@ typedef struct {
     int p_id, p_num;
     void *additional_info;
 } dist_grid_info_t;
-
+/*static inline unsigned long rpcc()
+{
+     unsigned long time;
+     asm("rtc %0": "=r" (time) : );
+     return time;
+}
+*/
 /* type == 7 or type == 27 */
 void create_dist_grid(dist_grid_info_t *info, int stencil_type);
 void destroy_dist_grid(dist_grid_info_t *info);
@@ -65,5 +70,7 @@ void destroy_dist_grid(dist_grid_info_t *info);
 ptr_t stencil_7(ptr_t arr, ptr_t aux, const dist_grid_info_t *info, int nt);
 ptr_t stencil_27(ptr_t arr, ptr_t aux, const dist_grid_info_t *info, int nt);
 
+
 /*next is add funcation*/
 #endif
+
